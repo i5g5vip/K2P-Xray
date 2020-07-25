@@ -16,7 +16,7 @@ on:
     branches:
       - main
     paths:
-      - '.config'
+      - 'openclash.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
@@ -26,7 +26,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/openwrt
   REPO_BRANCH: lede-17.01
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: openclash.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
