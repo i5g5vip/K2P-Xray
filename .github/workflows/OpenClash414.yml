@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name:  斐讯 K2P OpenClash纯净版(4.14内核)
+name:  K2P OpenClash(4.14内核)
 
 on:
   repository_dispatch:
