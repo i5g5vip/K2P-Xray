@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: K2P PassWall
+name: K2P_PassWall
 
 on:
   repository_dispatch:
