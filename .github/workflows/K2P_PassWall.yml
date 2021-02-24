@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/i5g5vip/lede
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: pk.config
@@ -74,6 +74,12 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+      
+    - name: Rm luci-theme-argon
+      run: cd openwrt/package/lean && rm -rf luci-theme-argon
+    
+    - name: Install luci-theme-argon
+      run: cd openwrt/package/lean && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 
     - name: Load custom configuration
       run: |
