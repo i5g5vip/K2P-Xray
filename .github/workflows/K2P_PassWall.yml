@@ -75,11 +75,11 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
       
-    - name: Rm luci-theme-argon
-      run: cd openwrt/package/lean && rm -rf luci-theme-argon
+    #- name: Rm luci-theme-argon
+    #  run: cd openwrt/package/lean && rm -rf luci-theme-argon
     
-    - name: Install luci-theme-argon
-      run: cd openwrt/package/lean && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+    #- name: Install luci-theme-argon
+    #  run: cd openwrt/package/lean && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 
     - name: Load custom configuration
       run: |
